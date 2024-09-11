@@ -1,0 +1,88 @@
+### CREATE five documents.
+POST http://localhost:3000/friends HTTP/1.1
+content-type: application/json
+
+{
+    "friendName": "Savannah",
+    "phoneNumber": 8645617759,
+    "favoriteColor": "Yellow",
+    "birthday": "05-11-1999"
+}
+
+
+### CREATE 2
+POST http://localhost:3000/friends HTTP/1.1
+content-type: application/json
+
+{
+    "friendName": "Lindsay",
+    "phoneNumber": 8646261056,
+    "favoriteColor": "Blue",
+    "birthday": "05-27-1999"
+}
+
+### CREATE 3
+POST http://localhost:3000/friends HTTP/1.1
+content-type: application/json
+
+{
+    "friendName": "Miriam",
+    "phoneNumber": 8645427430,
+    "favoriteColor": "Green",
+    "birthday": "05-15-1998"
+}
+
+### CREATE 4
+POST http://localhost:3000/friends HTTP/1.1
+content-type: application/json
+
+{
+    "friendName": "Hayden",
+    "phoneNumber": 8643992571,
+    "favoriteColor": "Green",
+    "birthday": "11-03-1996"
+}
+
+### CREATE 5
+POST http://localhost:3000/friends HTTP/1.1
+content-type: application/json
+
+{
+    "friendName": "Austin",
+    "phoneNumber": 8646078870,
+    "favoriteColor": "Red",
+    "birthday": "12-23-1995"
+}
+
+
+### RETRIEVE all documents.
+GET http://localhost:3000/friends HTTP/1.1
+
+
+
+### RETRIEVE a document by its ID.
+### Replace the following ID with one that exists in the collection.
+GET http://localhost:3000/friends/664fc426201d7c600fc58919 HTTP/1.1
+
+
+### UPDATE one document's birthday, by ID.
+### Replace the ID in the following request with one that exists
+### and update the birthday:
+PUT http://localhost:3000/friends/664fc426201d7c600fc58919 HTTP/1.1
+content-type: application/json
+
+{
+    "friendName": "Savannah",
+    "phoneNumber": 8645617759,
+    "favoriteColor": "Yellow",
+    "birthday": "05-11-1998"
+}
+
+### DELETE by ID (responds with nothing if successful):
+DELETE http://localhost:3000/friends/664fc426201d7c600fc58919 HTTP/1.1
+
+
+
+### RETRIEVE all documents (responds with 4 or the original 5):
+GET http://localhost:3000/friends HTTP/1.1
+

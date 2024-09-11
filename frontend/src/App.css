@@ -1,0 +1,557 @@
+/* 
+This style sheet can be used for reference
+but not for an assignment.
+*/
+
+/* Center the body in the middle of the viewport 
+by defining min and max widths with auto right/left margins
+*/
+
+/*   ----- Variables  -----  */
+:root {
+    --navy-blue: #22394B;
+    --dark-blue: #22394Bee;
+    --light-gray: #EBEFF2cc;
+    --light-gray-sheer: #EBEFF2dd;
+    --almost-white: #EBEFF2;
+    --dark-green: #1B3821;
+    --light-green: #44764e;
+    --peach: #E0866A;
+    --light-yellow: #f4ee98;
+    --light-blue: #8bd8f9bd;
+}
+
+/*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+body {
+    /* Can alternatively define in html {}. */
+    background-color: var(--light-gray);
+    background: url(images/venice-canal-houses.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top left;
+    background-repeat: no-repeat;
+    color: var(--dark-green);
+    font-family: "Source Serif 4", serif;
+    /* Define with at least one font name and its related generic family name.*/
+    margin: 0 auto;
+    padding: 12em;
+    max-width: 1100px;
+    min-width: 800px;
+}
+
+/*  ----- Page layout blocks -----  */
+header {
+    margin-left: 4em;
+    margin-right: 4em;
+    font-size: 25px;
+    background-color: var(--dark-blue);
+    color: var(--almost-white);
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    padding: 1em;
+    border-radius: 20px;
+    border: 4px dashed var(--almost-white);
+}
+
+main {
+    background-color: var(--light-gray-sheer);
+    border: 2px solid var(--navy-blue);
+    border-radius: 5px;
+    padding: 2em;
+}
+
+section {
+    background-color: var(--light-green);
+    color: var(--almost-white);
+    margin: 1em;
+    padding: 1em;
+    border: 4px solid var(--light-yellow);
+    text-align: center;
+    font-size: larger;
+}
+
+article {
+    text-align: left;
+}
+
+#webServers {
+    border-top: 5px dotted var(--peachcc);
+    margin: 0 2em;
+    padding: 2em;
+    text-align: left;
+
+}
+
+#frontendDesign {
+    border-top: 8px solid var(--navy-blue);
+    margin: 0 2em;
+    padding: 2em;
+    text-align: left;
+}
+
+#optimizingImages {
+    border-top: 5px solid var(--navy-blue);
+    margin: 0 2em;
+    padding: 2em;
+    text-align: left;
+}
+
+#favicons {
+    border-top: 8px solid var(--navy-blue);
+    margin: 0 2em;
+    padding: 2em;
+    text-align: left;
+}
+
+#cascadingStylesheets {
+    border-top: 5px dashed var(--peachcc);
+    margin: 0 2em;
+    padding: 2em;
+    text-align: left;
+}
+
+footer {
+    margin: 1em 8em;
+    font-size: 25px;
+    background-color: var(--navy-blue);
+    color: var(--almost-white);
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    padding: 2px;
+    border-radius: 20px;
+    border: 3px dotted var(--light-yellow);
+
+
+}
+
+/* ----- Anchors ----- Text links */
+a {}
+
+a:link {}
+
+a:hover {}
+
+a:active {}
+
+a:visited {}
+
+/* NAVIGATION
+Simple changes to make anchors look like buttons. 
+*/
+/*  ----- Navigation ----- Override text links for navigation only.  */
+nav {
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+
+}
+
+.local {
+    display: flex;
+    padding: 25px;
+    margin: 2em;
+    background-color: var(--light-yellow);
+    color: var(--almost-white);
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 5px solid var(--navy-blue);
+    vertical-align: middle;
+    flex-flow: row wrap;
+
+}
+
+.local a {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: var(--light-blue);
+    color: var(--navy-blue);
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1;
+    text-decoration: none;
+    border: 1px solid var(--navy-blue);
+    border-radius: 5px;
+    vertical-align: middle;
+    flex-flow: row wrap;
+
+}
+
+nav a {
+    padding: 10px 20px;
+    margin-right: 20px;
+    background-color: var(--navy-blue);
+    color: var(--almost-white);
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-decoration: none;
+    border: 3px solid var(--light-blue);
+    border-radius: 5px;
+    vertical-align: middle;
+
+
+}
+
+nav a:hover {
+    background-color: var(--peach);
+    color: var(--almost-white);
+    border: 2px dashed var(--almost-white);
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/*  -----  Typography  ----- */
+p {}
+
+br {}
+
+ol,
+ul,
+dl {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding-right: 4em;
+    padding-left: 4em;
+    border-right: 3px solid var(--peach);
+    border-left: 3px solid var(--peach);
+
+}
+
+li {}
+
+dt {
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 2px;
+
+}
+
+dd {}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Oswald", sans-serif;
+}
+
+
+abbr {}
+
+acronym {}
+
+address {}
+
+blockquote {}
+
+q {}
+
+cite {}
+
+em {}
+
+hr {}
+
+mark {}
+
+s {}
+
+span {}
+
+strong {}
+
+sub {}
+
+sup {}
+
+time {}
+
+/*  ----- Coding or instructional typography ----- */
+pre {}
+
+code {}
+
+kbd {}
+
+samp {}
+
+var {}
+
+del {}
+
+ins {}
+
+/* TABLE */
+table {
+    border-collapse: collapse;
+    max-width: 100%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+caption {
+    background-color: var(--light-blue);
+    border-top: 2px solid var(--navy-blue);
+    border-left: 2px solid var(--navy-blue);
+    border-right: 2px solid var(--navy-blue);
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 1%;
+}
+
+thead {
+    font-size: 20px;
+    padding: 1em;
+
+}
+
+tbody {
+    text-align: center;
+}
+
+tfoot {}
+
+tr {
+    border: 2px solid var(--navy-blue);
+}
+
+tr:nth-child(even) {}
+
+th {
+    border: 2px solid var(--navy-blue);
+    background-color: var(--light-yellow);
+    color: #22394B;
+    padding: 10px;
+}
+
+td {
+    border: 2px solid var(--navy-blue);
+    background-color: var(--light-blue);
+    padding: 1em;
+    text-align: left;
+
+}
+
+td:nth-child(1) {
+    min-width: 150px;
+}
+
+td:nth-child(2) {
+    min-width: 100px;
+}
+
+td:nth-child(3) {
+    min-width: 100px;
+}
+
+td:nth-child(4) {
+    min-width: 100px;
+}
+
+colgroup {}
+
+data {}
+
+datalist {}
+
+
+form,
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 16px;
+    padding: 4em;
+    text-align: left;
+    border: 2px solid var(--navy-blue);
+
+}
+
+fieldset {
+    border: 2px dotted var(--light-yellow);
+    margin-top: 1%;
+    padding: 2%;
+
+}
+
+legend {
+    color: var(--light-yellow);
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: left;
+
+}
+
+label {
+    display: block;
+    margin-top: 1%;
+    font-size: 18px;
+    padding: 10px;
+
+}
+
+button {
+    border: 5px solid var(--light-yellow);
+    border-radius: 2px;
+    background-color: var(--almost-white);
+    color: var(--navy-blue);
+    padding: 8px;
+}
+
+button:hover {
+    color: var(--almost-white);
+    background-color: var(--peach);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 85%;
+    padding: 1em;
+    align-items: normal;
+
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid var(--navy-blue);
+    outline: none;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--navy-blue);
+    outline: none;
+}
+
+input[type="checkbox"]:checked {
+    background-color: var(--navy-blue)
+}
+
+input[type="radio"]:checked {
+    background-color: var(--navy-blue)
+}
+
+input[type="number"] {
+    border: 2px solid var(--navy-blue);
+    padding: 1em;
+
+}
+
+textarea {
+    height: 190px;
+}
+
+input {
+    background-color: var(--almost-white);
+    padding: 1%;
+}
+
+select {
+    background-color: var(--almost-white);
+    color: var(--dark-green);
+    padding: 1%;
+}
+
+optgroup {}
+
+option {}
+
+textarea {
+    background-color: var(--almost-white);
+    padding: 1%;
+}
+
+output {}
+
+meter {}
+
+progress {}
+
+:focus {
+    background-color: var(--light-yellow);
+    color: var(--dark-green);
+}
+
+*::placeholder {
+    color: var(--navy-blue);
+    font-size: 1em;
+}
+
+*:required {
+    border: 2px solid var(--peach);
+}
+
+label.required:after {
+    content: " *";
+    color: red;
+}
+
+/* ----- Media ----- */
+.gallery {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+figcaption {
+    border: 5px dotted var(--light-yellow);
+    background-color: var(--light-gray);
+    color: var(--navy-blue);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 1em;
+    border-radius: 10px;
+}
+
+
+figure img {
+    display: flex;
+    border: 2px solid var(--dark-green);
+    width: 70%;
+
+
+}
+
+svg {}
+
+picture {}
+
+source {}
+
+iframe {}
+
+video {}
+
+audio {}
+
+embed {}
+
+object {}
